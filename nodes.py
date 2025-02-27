@@ -164,7 +164,7 @@ fp16 uses much less VRAM, but in some cases can lead to loss of quality.
                     try:
                         from huggingface_hub import snapshot_download
                         checkpoint_path = os.path.join(diffusers_model_path, "marigold-lcm-v1-0")
-                        snapshot_download(repo_id="prs-eth/marigold-lcm-v1-0", ignore_patterns=to_ignore, local_dir=checkpoint_path, local_dir_use_symlinks=False)  
+                        snapshot_download(repo_id="prs-eth/marigold-depth-lcm-v1-0", ignore_patterns=to_ignore, local_dir=checkpoint_path, local_dir_use_symlinks=False)  
                     except:
                         raise FileNotFoundError(f"No checkpoint directory found at {checkpoint_path}")
 
